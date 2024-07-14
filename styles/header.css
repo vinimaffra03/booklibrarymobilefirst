@@ -1,0 +1,125 @@
+.header {
+    background-color: var(--header-background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__hamburger__menu {
+    width: 48px;
+    height: 48px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    padding-right: 1em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+ }
+
+ .container__imagens {
+    padding: 0.3em;
+    width: 80%;
+ }
+
+ .lista__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+ }
+
+ .container__botao__menu:checked ~ .lista__menu {
+    display: block;
+ }
+
+ .container__botao__menu {
+   display: none;
+ }
+
+ .lista__menu__titulo, 
+ .lista__menu__item {
+   padding: 1em;
+   background-color: var(--header-background-color);
+ }
+
+ .lista__menu__titulo {
+   color: var(--menu-categorias);
+   font-weight: 700;
+ }
+
+ .lista__menu__link {
+   background: var(--menu-itens);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-decoration: none;
+ }
+
+ .logo__segundaPlataforma,
+ .container__nav__lista {
+    display: none;
+ }  
+
+
+ /* Visualização para tablets/ipads */
+ @media screen and (min-width: 1024px) {
+  .container__imagens__favorito,
+  .container__botao__menu,
+  .header__hamburger__menu {
+    display: none;
+  }
+
+  .logo__segundaPlataforma {
+    display: flex;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0.5em 0 0 0.3em;
+  }
+
+  .logo__segundaPlataforma--negrito {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .container__imagens {
+    margin-left: 1em;
+  }
+
+  .container {
+    margin-right: 1em;
+  } 
+
+  .container__nav__lista {
+    display: flex;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-top: 0.5em;
+    gap: 2em;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .opcoes__menu__categorias:checked~.lista__menu {
+    display: block;
+    width: auto
+  }
+
+  .opcoes__menu__categorias {
+    display: none;
+  }
+
+  .lista__menu {
+    margin-right: 17em;
+   }
+ }
+
+ 

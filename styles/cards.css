@@ -1,0 +1,104 @@
+.card {
+    margin: 1em;
+    padding: 1em;
+    background-color: var(--header-background-color);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 10px;
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: start;
+}
+
+.card__titulo {
+    color: var(--menu-categorias);
+    font-family: var(--main-font);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+.card__titulo-livro {
+    color: var(--card-title-color);
+    opacity: 0px;
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+
+
+}
+
+.card__texto {
+    padding: 0 2.5em 0 0;
+    color: var(black);
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.botoes__itens {
+    display: flex;
+}
+
+.botao__principal {
+    text-align: center;
+    background-color: var(--menu-categorias);
+    padding: 0.8em 2.4em;
+    color: var(--header-background-color);
+    text-decoration: none;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.card__imagem {
+    width: 45%;
+}
+
+
+ /* segundo card */
+.card__titulo-autora {
+    color: var(--menu-categorias);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 0.5em;
+}
+
+.card__texto__autora {
+    padding-right: 2em;
+    color: var(--black);
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+
+ /* Visualização para tablets/ipads */
+ @media screen and (min-width: 1024px) {
+    .card {
+        width: 50%;
+        margin: 0 auto 2em auto;
+    }
+ }

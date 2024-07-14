@@ -1,0 +1,50 @@
+@import url("./styles/header.css");
+@import url("/styles/banner.css");
+@import url("/styles/carrossel.css");
+@import url("./styles/cards.css");
+@import url("./styles/newsletter.css");
+@import url("./styles/footer.css");
+
+:root {
+    --main-background-color: #d1d1d2;
+    --header-background-color: #ffffff;
+    --menu-categorias: #EB9B00;
+    --menu-itens: linear-gradient(97.54deg, #012a49 35.49%, #2d5e82 165.37%);
+    --newsletter-main-color: #002F52;
+    --card-title-color: #002F52;
+    --black: #000000;
+    --footer-logo-text: #474646;
+    --footer-logo-title: #858585; 
+
+
+
+    --main-font: "Poppins", sans-serif;
+    --secondary-font: "Josefin Sans", sans-serif;
+}
+
+body {
+    background-color: var(--main-background-color);
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.horizontal__line {
+    margin: 0px;
+    color: var(--black);
+}
+
+.final {
+    background-color: var(--header-background-color);
+    padding: 1em;
+    text-align: center;
+    font-family: var(--main-font);
+    font-weight: 500;
+    color: var(--card-title-color);
+}
+
+.final__link {
+    text-decoration: none;
+    color: #2d5e82;
+}

@@ -1,0 +1,113 @@
+
+.banner {
+    background: var(--menu-itens);
+    color: var(--header-background-color);
+    text-align: center;
+    padding: 3em 2em;
+} 
+
+.banner__titulo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.banner__texto {
+    font-size: 16px;  
+    font-weight: 500;
+    padding: 1em 0;
+}
+
+.banner__pesquisa {
+    background-color: var(--menu-itens);
+    color: var(--header-background-color);
+    border: 1px solid var(--header-background-color);    
+    border-radius: 24px;
+    font-size: 14px;   
+    font-weight: 400;  
+    padding: 1em;  
+    width: 100%; 
+}
+
+.banner__pesquisa::placeholder {
+    padding-left: 2.7em;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 14px;
+    color: var(--menu-itens);
+    background: url("../img/Vector.svg") no-repeat;
+    background-position: 1em;
+}
+
+/* Banner para tópicos recentes */
+
+.topicos {
+    background: var(--menu-itens);
+    color: var(--header-background-color);
+    text-align: center;
+    padding: 1em 0em;
+}
+
+.topicos__titulo {
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+.topicos__botao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.topicos__botoes {
+    text-align: center;
+    background-color: var(--menu-categorias);
+    padding: 0.7em 2.2em;
+    margin: 0.2em;
+    color: var(--header-background-color);
+    text-decoration: none;
+    font-family: var(--main-font);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+/* Visualização para tablets/ipads */
+@media screen and (min-width: 1024px) {
+    .banner {
+        display: block; 
+    }
+
+    .banner__titulo {
+        font-size: 36px;    
+        margin-top: 1em;
+    }
+
+    .banner__texto {
+        font-size: 16px;
+    }
+
+    .banner__pesquisa {
+        width: 50%;
+        padding: 1em;
+    }
+
+    .banner__pesquisa::placeholder {
+        background-position: 5em;
+    }
+
+    /* tópicos */
+
+    .topicos {
+        padding: 2em;
+    }
+
+    .topicos__titulo {
+        font-size: 16px;    
+    }
+
+}
